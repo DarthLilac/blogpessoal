@@ -95,10 +95,10 @@ public class UsuarioControllerTest {
  	public void deveMostrarTodosUsuarios() {
 		
 		usuarioService.cadastrarUsuario(new Usuario(0L,
-				"Sabrina Sanchez", "sabrina@email.com", "123456", "-"));
+				"Sabrina Sanchez", "sabrina@email.com", "12345678", "-"));
 		
 		usuarioService.cadastrarUsuario(new Usuario(0L,
-				"Ricardo Marques", "ricardo@email.com", "123456", "-"));
+				"Ricardo Marques", "ricardo@email.com", "12345678", "-"));
 		
 		ResponseEntity<String> resposta = testRestTemplate
 				.withBasicAuth("root@root.com", "rootroot")
