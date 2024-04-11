@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generation.blogpessoal.model.UsuarioLogin;
 import com.generation.blogpessoal.model.Usuario;
 import com.generation.blogpessoal.repository.UsuarioRepository;
-import blogpessoal.service.UsuarioService;
+import com.generation.blogpessoal.service.UsuarioService;
 
 import jakarta.validation.Valid;
 
@@ -35,9 +35,7 @@ public class UsuarioController {
 	
 	@GetMapping("/all")
 	public ResponseEntity <List<Usuario>> getAll(){
-		
 		return ResponseEntity.ok(usuarioRepository.findAll());
-		
 	}
 
 	@GetMapping("/{id}")
